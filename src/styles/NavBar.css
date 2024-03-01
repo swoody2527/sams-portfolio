@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+
+.navbar {
+    font-family: Kode Mono;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 150px; 
+    height: 120vh; 
+    background-color: #333; 
+    padding: 20px; 
+    box-shadow: 0 0 20px 10px rgba(0, 128, 0, 0.5); 
+    animation: breatheGlow 5s infinite alternate; 
+  }
+  
+  @keyframes breatheGlow {
+    0% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    }
+    100% {
+      box-shadow: 0 0 100px var(--main-accent); 
+    }
+  }
+
+.navbar a {
+    color: var(--main-accent);
+    text-decoration: none;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
