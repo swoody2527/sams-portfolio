@@ -9,14 +9,16 @@
 .main-content {
     font-family: Kode Mono;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 
 .typewriter h1 {
     overflow: hidden;
     border-right: .40em solid var(--main-accent); 
     white-space: nowrap; 
-    margin: 1 auto; 
     letter-spacing: .15em; 
     animation: 
       typing 3.5s steps(40, end),
@@ -31,5 +33,10 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: var(--main-accent); }
+  }
+
+  .about-me-section {
+    background-color: aliceblue;
+    text-align: center;
   }
   
