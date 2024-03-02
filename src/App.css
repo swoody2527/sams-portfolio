@@ -1,0 +1,35 @@
+.app-container {
+    display: flex;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.main-content {
+    font-family: Kode Mono;
+    display: flex;
+}
+
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .40em solid var(--main-accent); 
+    white-space: nowrap; 
+    margin: 1 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; max-width: 0; }
+    to { width: 100%; max-width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--main-accent); }
+  }
+  

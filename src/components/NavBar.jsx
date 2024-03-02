@@ -7,10 +7,16 @@ function NavBar() {
         <a href='/' className='site-title'>Sam Woodall</a>
         <ul>
             <li>
-                <a href='/'>About Me</a>
+                <a href='/about-me'>About Me</a>
+            </li>
+            <li>
+                <a href='/'>Skillset</a>
             </li>
             <li>
                 <a href='/'>Projects</a>
+            </li>
+            <li>
+                <a href='/'>Contact Me</a>
             </li>
         </ul>
     </nav>
