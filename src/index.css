@@ -45,6 +45,22 @@ h2 {
   
 }
 
+.cv-btn {
+  transition: all 1s ease;
+  font-family: Kode Mono;
+  font-size: 50px;
+  margin: 0;
+  border: 2px solid transparent;
+  color: var(--main-accent);
+  background-color: #333;
+  margin-top: 5%;
+}
+
+.cv-btn:hover {
+  border: 2px solid var(--main-accent);
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 10px black;
+}
 .hero-pic {
   border: 5px solid var(--main-accent);
   border-radius: 150px;

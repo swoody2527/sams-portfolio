@@ -20,6 +20,7 @@ function App() {
           my portfolio website.</p>
           <img className="hero-pic" src="src/assets/me.png"></img>
           </div>
+          <button className="cv-btn">My CV</button>
         </div>
         <section className="about-me-section">
             <h2>About Me</h2>
