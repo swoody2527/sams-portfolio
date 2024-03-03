@@ -18,6 +18,12 @@ function NavBar() {
             <li>
                 <a href='/'>Contact Me</a>
             </li>
+            <li>
+                <a href='/'>GitHub</a>
+            </li>
+            <li>
+                <a href='/'><img src=''></img></a>
+            </li>
         </ul>
     </nav>
   )

@@ -21,7 +21,7 @@ function App() {
           <img className="hero-pic" src="src/assets/me.png"></img>
           </div>
           <section className="about-me-section">
-            <h3>About Me</h3>
+            <h2>About Me</h2>
             <p>This is where I will explain all about me and my programming journey</p>
 
           </section>
