@@ -19,10 +19,10 @@ function NavBar() {
                 <a href='/'>Contact Me</a>
             </li>
             <li>
-                <a href='/'>GitHub</a>
+                <a href='/'><img className='github-img' src='src/assets/github-logo.png'></img></a>
             </li>
             <li>
-                <a href='/'><img src=''></img></a>
+                <a href='/'><img src='src/assets/In-White-40-Γö¼┬½.png'></img></a>
             </li>
         </ul>
     </nav>

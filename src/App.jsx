@@ -20,12 +20,19 @@ function App() {
           my portfolio website.</p>
           <img className="hero-pic" src="src/assets/me.png"></img>
           </div>
-          <section className="about-me-section">
+        </div>
+        <section className="about-me-section">
             <h2>About Me</h2>
             <p>This is where I will explain all about me and my programming journey</p>
-
           </section>
-        </div>
+          <section className="skillset-section">
+            <h2>My Current Skillset</h2>
+            <p>This is where I will explain all about me and my programming journey</p>
+          </section>
+          <section className="projects-section">
+            <h2>Projects</h2>
+            <p>This is where I will explain all about me and my programming journey</p>
+          </section>
       </div>
     </div>
   );

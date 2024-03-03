@@ -14,6 +14,7 @@ body {
 
 
 .navbar {
+    /* position: fixed; */
     font-family: Kode Mono;
     left: 0; 
     top: 0; 
@@ -84,4 +85,10 @@ body {
 
 .navbar ul a:hover::before {
   transform: scaleX(1);
+}
+
+
+.github-img {
+  height: 50px;
+  width: 50px;
 }
