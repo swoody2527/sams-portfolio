@@ -14,12 +14,12 @@ body {
 
 
 .navbar {
-    /* position: fixed; */
+    position: fixed;
     font-family: Kode Mono;
     left: 0; 
     top: 0; 
     width: 150px; 
-    height: 120vh; 
+    height: 100vh; 
     background-color: #333; 
     padding: 10px; 
     box-shadow: 0 0 20px 10px rgba(0, 128, 0, 0.5); 
@@ -43,6 +43,10 @@ body {
 .navbar a {
     color: var(--main-accent);
     text-decoration: none;
+}
+
+.navbar li {
+  margin-top: 30px;
 }
 
 .navbar ul {
@@ -86,6 +90,15 @@ body {
 .navbar ul a:hover::before {
   transform: scaleX(1);
 }
+
+.nav-images {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  
+}
+
+
 
 
 .github-img {

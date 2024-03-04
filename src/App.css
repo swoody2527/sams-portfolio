@@ -3,19 +3,33 @@
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     flex-grow: 1;
 }
 
-.main-content {
+.main-content-hero {
     font-family: Kode Mono;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-content {
+  font-family: Kode Mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
 
 
 .typewriter h1 {
+    font-family: Kode Mono;
     overflow: hidden;
     border-right: .40em solid var(--main-accent); 
     white-space: nowrap; 

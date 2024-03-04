@@ -8,32 +8,32 @@ function App() {
       <NavBar></NavBar>
       <div className="main-container">
 
-        <div className="main-content">
-
-          <div className="typewriter">
-            <h1>Hello! I'm <span className="my-name">Sam</span>.</h1>
-          </div>
-
+        <div className="main-content-hero">
+        <div className="typewriter">
+          <h1>
+            Hello! I'm <span className="my-name">Sam</span>.
+          </h1>
+        </div>
           <div className="hero-elements">
-          <p className="hero-text">I am a Software Engineer who loves forging
-          great programming solutions and exploring new technologies. Welcome to
-          my portfolio website.</p>
-          <img className="hero-pic" src="src/assets/me.png"></img>
+            <p className="hero-text">
+              I am a Software Engineer who loves forging great programming
+              solutions and exploring new technologies. Welcome to my portfolio
+              website.
+            </p>
+            <img className="hero-pic" src="src/assets/me.png"></img>
           </div>
           <button className="cv-btn">My CV</button>
         </div>
-        <section className="about-me-section">
-            <h2>About Me</h2>
-            <p>This is where I will explain all about me and my programming journey</p>
-          </section>
-          <section className="skillset-section">
-            <h2>My Current Skillset</h2>
-            <p>This is where I will explain all about me and my programming journey</p>
-          </section>
-          <section className="projects-section">
-            <h2>Projects</h2>
-            <p>This is where I will explain all about me and my programming journey</p>
-          </section>
+        <div className="main-content">
+          <div className="about-me-elements">
+            <p className="about-me-text">
+              <h2>About Me</h2>
+              I am a Software Engineer who loves forging great programming
+              solutions and exploring new technologies. Welcome to my portfolio
+              website.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
