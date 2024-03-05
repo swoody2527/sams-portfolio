@@ -1,8 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import { useInView } from "react-intersection-observer";
 
 function App() {
+  const [aboutMeRef, aboutMeInView] = useInView({
+    triggerOnce: true
+  })
+
   return (
     <div className="app-container">
       <NavBar></NavBar>
@@ -16,7 +21,7 @@ function App() {
         </div>
           <div className="hero-elements">
             <p className="hero-text">
-              I am a Software Engineer who loves forging great programming
+              I am a <span style={{color: "white"}}>Software Engineer</span> who loves forging great programming
               solutions and exploring new technologies. Welcome to my portfolio
               website.
             </p>
@@ -25,9 +30,11 @@ function App() {
           <button className="cv-btn">My CV</button>
         </div>
         <div className="main-content">
-          <div className="about-me-elements">
+          <div className="about-me-elements" ref={aboutMeRef}>
+            <div className="typewriter">
+              <h2 className={aboutMeInView ? 'animate' : ""}>About Me.</h2>
+            </div>
             <p className="about-me-text">
-              <h2>About Me</h2>
               I am a Software Engineer who loves forging great programming
               solutions and exploring new technologies. Welcome to my portfolio
               website.

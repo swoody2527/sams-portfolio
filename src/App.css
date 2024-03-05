@@ -6,7 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-    flex-grow: 1;
+  box-sizing: border-box;
+  margin-left: 150px;
 }
 
 .main-content-hero {
@@ -24,11 +25,12 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    border-top: 10px inset var(--main-accent);
 }
 
 
 
-.typewriter h1 {
+.typewriter h1, h2.animate {
     font-family: Kode Mono;
     overflow: hidden;
     border-right: .40em solid var(--main-accent); 
