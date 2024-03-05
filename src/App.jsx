@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="app-container">
       <NavBar></NavBar>
-      <div className="main-container">
+      <div className="main-container" id="landing-page">
         <div className="main-content-hero">
           <div className="typewriter">
             <h1>

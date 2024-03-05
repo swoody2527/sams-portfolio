@@ -4,22 +4,22 @@ import "../styles/NavBar.css";
 function NavBar() {
   return (
     <nav className="navbar">
-      <a href="/" className="site-title">
+      <a href="#landing-page" className="site-title">
         Sam Woodall
       </a>
       <ul>
         <div className="nav-links">
         <li>
-          <a href="/about-me">About Me</a>
+          <a href="#skillset">Skillset</a>
         </li>
         <li>
-          <a href="/">Skillset</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="/">Projects</a>
+          <a href="#about-me">About Me</a>
         </li>
         <li>
-          <a href="/">Contact Me</a>
+          <a href="#contact-me">Contact Me</a>
         </li>
         </div>
         <div className="nav-images">
