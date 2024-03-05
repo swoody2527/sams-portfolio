@@ -28,7 +28,7 @@ h2 {
   text-decoration: underline;
 }
 
-.hero-elements, .about-me-elements, .skillset-elements, .contact-elements {
+.hero-elements, .about-me-elements, .skillset-elements, .contact-elements, .projects-elements {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ h2 {
   padding-right: 20px;
 }
 
-.about-me-text, .skillset-text, .contact-text {
+.about-me-text, .skillset-text, .contact-text, .projects-text {
   color: var(--main-accent);
   font-size: 20.5px;
   padding-right: 20px;

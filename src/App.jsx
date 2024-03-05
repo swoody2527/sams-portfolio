@@ -16,6 +16,10 @@ function App() {
     triggerOnce: true,
   });
 
+  const [projectsRef, projectsInView] = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <div className="app-container">
       <NavBar></NavBar>
@@ -28,12 +32,36 @@ function App() {
           </div>
           <div className="hero-elements">
             <p className="hero-text">
-               A <span style={{ color: "white" }}>Software Engineer</span>{" "}
+               A <span style={{ color: "white" }}>Full-Stack Software Engineer</span>{" "}
               who loves forging great programming solutions and exploring new
               technologies. Welcome to my portfolio website.
             </p>
           </div>
           <button className="cv-btn">My CV</button>
+          <a href="#skillset" className="arrow down"></a>
+        </div>
+        <div className="main-content" id="skillset">
+          <div className="skillset-elements" ref={skillsetRef}>
+            <div className="typewriter">
+              <h2 className={skillsetInView ? "animate" : ""}>Skillset</h2>
+            </div>
+            <p className="skillset-text">
+              I am a Software Engineer who loves forging great programming
+              solutions and exploring new technologies. Welcome to my portfolio
+              website.
+            </p>
+          </div>
+          <a href="#projects" className="arrow down"></a>
+        </div>
+        <div className="main-content" id="projects">
+          <div className="projects-elements" ref={projectsRef}>
+            <div className="typewriter">
+              <h2 className={projectsInView ? "animate" : ""}>Projects</h2>
+            </div>
+            <p className="projects-text">
+              Here will be all my projects.
+            </p>
+          </div>
           <a href="#about-me" className="arrow down"></a>
         </div>
         <div className="main-content" id="about-me">
@@ -64,21 +92,9 @@ function App() {
               for around 7 years now.
             </p>
           </div>
-          <a href="#skillset" className="arrow down"></a>
+          <a href="#contact-me" className="arrow down"></a>
         </div>
-        <div className="main-content" id="skillset">
-          <div className="skillset-elements" ref={skillsetRef}>
-            <div className="typewriter">
-              <h2 className={skillsetInView ? "animate" : ""}>Skillset</h2>
-            </div>
-            <p className="skillset-text">
-              I am a Software Engineer who loves forging great programming
-              solutions and exploring new technologies. Welcome to my portfolio
-              website.
-            </p>
-          </div>
-        </div>
-        <div className="main-content">
+        <div className="main-content" id="contact-me">
           <div className="contact-elements" ref={contactRef}>
             <div className="typewriter">
               <h2 className={contactInView ? "animate" : ""}>Contact Me</h2>
