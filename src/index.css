@@ -28,11 +28,22 @@ h2 {
   text-decoration: underline;
 }
 
-.hero-elements, .about-me-elements {
+.hero-elements, .about-me-elements, .skillset-elements, .contact-elements {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 70%;
+}
+
+.about-me-elements h3 {
+  font-size: 30px;
+  text-decoration: underline;
+  color: white;
+}
+
+.about-me-elements li {
+  color: white;
+  margin-top: 10px;
 }
 
 .hero-text {
@@ -41,7 +52,7 @@ h2 {
   padding-right: 20px;
 }
 
-.about-me-text {
+.about-me-text, .skillset-text, .contact-text {
   color: var(--main-accent);
   font-size: 20.5px;
   padding-right: 20px;

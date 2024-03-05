@@ -24,7 +24,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
+    width: 80%;
     border-top: 10px inset var(--main-accent);
 }
 
@@ -40,6 +41,17 @@
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
+
+  .typewriter h2.animate {
+    font-family: Kode Mono;
+    overflow: hidden;
+    border-right: .40em solid var(--main-accent); 
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
   
   @keyframes typing {
     from { width: 0; max-width: 0; }
@@ -53,4 +65,14 @@
 
 
 
-  
+  .arrow {
+    border: solid var(--main-accent);
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
