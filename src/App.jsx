@@ -37,22 +37,79 @@ function App() {
               technologies. Welcome to my portfolio website.
             </p>
           </div>
-          <button className="cv-btn">My CV</button>
+          <button className="cv-btn">Resume / CV</button>
           <a href="#skillset" className="arrow down"></a>
         </div>
+        
         <div className="main-content" id="skillset">
           <div className="skillset-elements" ref={skillsetRef}>
             <div className="typewriter">
               <h2 className={skillsetInView ? "animate" : ""}>Skillset</h2>
             </div>
-            <p className="skillset-text">
-              I am a Software Engineer who loves forging great programming
-              solutions and exploring new technologies. Welcome to my portfolio
-              website.
-            </p>
+            <p className="skillset-text"></p>
+          </div>
+          <div className="skills-container">
+            <div className="skill">
+              <img src="src/assets/javascript-js.svg"></img>
+              <p>JavaScript</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/590px-Node.js_logo.svg.png"></img>
+              <p>Node.js</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/express_logo.png"></img>
+              <p>Express</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/Python_logo_01.svg"></img>
+              <p>Python</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/Jest.svg"></img>
+              <p>Jest</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/firebase.svg"></img>
+              <p>Firebase</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/Postgresql_elephant.svg.png"></img>
+              <p>PSQL</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/html5.png"></img>
+              <p>HTML</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/CSS3_logo.svg.png"></img>
+              <p>CSS</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/react.svg"></img>
+              <p>React</p>
+            </div>
+          </div>
+          
+          <div className="skills-container">
+          <div className="skill">
+              <img src="src/assets/programming.png"></img>
+              <p>Paired Programming</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/scrum.png"></img>
+              <p>SCRUM & Agile</p>
+            </div>
+            <div className="skill">
+              <img src="src/assets/team.png"></img>
+              <p>Group Collaboration</p>
+            </div>
+
           </div>
           <a href="#projects" className="arrow down"></a>
         </div>
+
+
         <div className="main-content" id="projects">
           <div className="projects-elements" ref={projectsRef}>
             <div className="typewriter">
@@ -64,6 +121,8 @@ function App() {
           </div>
           <a href="#about-me" className="arrow down"></a>
         </div>
+
+
         <div className="main-content" id="about-me">
           <div className="about-me-elements" ref={aboutMeRef}>
             <div className="typewriter">
