@@ -160,3 +160,8 @@
   height: 500px;
   width: 900px;
 }
+
+.project-container h3 {
+  font-size: 40px;
+  margin: 10px;
+}

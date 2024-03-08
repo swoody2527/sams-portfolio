@@ -32,7 +32,10 @@ function App() {
           </div>
           <div className="hero-elements">
             <p className="hero-text">
-               A <span style={{ color: "white" }}>Full-Stack Software Engineer</span>{" "}
+              A{" "}
+              <span style={{ color: "white" }}>
+                Full-Stack Software Engineer
+              </span>{" "}
               who loves forging great programming solutions and exploring new
               technologies. Welcome to my portfolio website.
             </p>
@@ -40,7 +43,7 @@ function App() {
           <button className="cv-btn">Resume / CV</button>
           <a href="#skillset" className="arrow down"></a>
         </div>
-        
+
         <div className="main-content" id="skillset">
           <div className="skillset-elements" ref={skillsetRef}>
             <div className="typewriter">
@@ -90,9 +93,9 @@ function App() {
               <p>React</p>
             </div>
           </div>
-          
+
           <div className="skills-container">
-          <div className="skill">
+            <div className="skill">
               <img src="src/assets/programming.png"></img>
               <p>Paired Programming</p>
             </div>
@@ -104,11 +107,9 @@ function App() {
               <img src="src/assets/team.png"></img>
               <p>Group Collaboration</p>
             </div>
-
           </div>
           <a href="#projects" className="arrow down"></a>
         </div>
-
 
         <div className="main-content" id="projects">
           <div className="projects-elements" ref={projectsRef}>
@@ -117,23 +118,72 @@ function App() {
             </div>
 
             <div className="project-container">
-              <h3>Project Title</h3>
+              <h3>PlayPals</h3>
               <div className="project-content">
-              <p>Project description will go here to describe my project and what is is about</p>
-              <img className="project-img" src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
+                <div className="project-info">
+                <p>
+                  Project description will go here to describe my project and
+                  what is is about
+                </p>
+                <button className="cv-btn" style={{fontSize: "30px"}}>View Repo</button>
+                <button className="cv-btn" style={{fontSize: "30px"}}>Hosted Site</button>
+                </div>
+                <img
+                  className="project-img"
+                  src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
               </div>
             </div>
             <div className="project-container">
-              <h3>Project Title</h3>
+              <h3>NC News</h3>
               <div className="project-content">
-              <img className="project-img" src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
-              <p>Project description will go here to describe my project and what is is about</p>
+                <img
+                  className="project-img"
+                  src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
+                <p>
+                  Project description will go here to describe my project and
+                  what is is about
+                </p>
+              </div>
+            </div>
+            <div className="project-container">
+              <h3>NC News API</h3>
+              <div className="project-content">
+                <p>
+                  Project description will go here to describe my project and
+                  what is is about
+                </p>
+                <img
+                  className="project-img"
+                  src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
+              </div>
+            </div>
+            <div className="project-container">
+              <h3>Repper</h3>
+              <div className="project-content">
+                <img
+                  className="project-img"
+                  src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
+                <p>
+                  Project description will go here to describe my project and
+                  what is is about
+                </p>
+              </div>
+            </div>
+            <div className="project-container">
+              <h3>SubTrack</h3>
+              <div className="project-content">
+                <p>
+                  Project description will go here to describe my project and
+                  what is is about
+                </p>
+                <img
+                  className="project-img"
+                  src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
               </div>
             </div>
           </div>
           <a href="#about-me" className="arrow down"></a>
         </div>
-
 
         <div className="main-content" id="about-me">
           <div className="about-me-elements" ref={aboutMeRef}>
@@ -142,7 +192,7 @@ function App() {
             </div>
             <img className="hero-pic" src="src/assets/me.png"></img>
 
-            <p style={{color: "white"}} className="about-me-text">
+            <p style={{ color: "white" }} className="about-me-text">
               Hello there! I'm Sam Woodall, a Software Devloper based in West
               Sussex, UK. For me, the joy in coding stems from the continual
               problem solving required to create great code. Breaking down
@@ -151,16 +201,17 @@ function App() {
               tangible creation, I find, is immensily satisfying. The fact that
               there is never one road to a solution with coding continually
               makes the experience exciting and opens up endless oppurtunities
-              to learn and expand my skillset. I am commited to the endless learning
-              journey that comes with a career in Software Development and I am
-              eager to continue to learn and create fantastic programming solutions.
+              to learn and expand my skillset. I am commited to the endless
+              learning journey that comes with a career in Software Development
+              and I am eager to continue to learn and create fantastic
+              programming solutions.
             </p>
 
-            <p style={{color: "white"}} className="about-me-text">
+            <p style={{ color: "white" }} className="about-me-text">
               Outside of coding, I like to keep up with my personal fitness
               through weightlifting and running. I also love foreign language
-              learning and have been studying Korean as my focus, both formally and self study,
-              for around 7 years now.
+              learning and have been studying Korean as my focus, both formally
+              and self study, for around 7 years now.
             </p>
           </div>
           <a href="#contact-me" className="arrow down"></a>
