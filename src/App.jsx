@@ -113,11 +113,23 @@ function App() {
         <div className="main-content" id="projects">
           <div className="projects-elements" ref={projectsRef}>
             <div className="typewriter">
-              <h2 className={projectsInView ? "animate" : ""}>Projects</h2>
+              <h2 className={projectsInView ? "animate" : ""}>Projects.</h2>
             </div>
-            <p className="projects-text">
-              Here will be all my projects.
-            </p>
+
+            <div className="project-container">
+              <h3>Project Title</h3>
+              <div className="project-content">
+              <p>Project description will go here to describe my project and what is is about</p>
+              <img className="project-img" src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
+              </div>
+            </div>
+            <div className="project-container">
+              <h3>Project Title</h3>
+              <div className="project-content">
+              <img className="project-img" src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
+              <p>Project description will go here to describe my project and what is is about</p>
+              </div>
+            </div>
           </div>
           <a href="#about-me" className="arrow down"></a>
         </div>
@@ -156,7 +168,7 @@ function App() {
         <div className="main-content" id="contact-me">
           <div className="contact-elements" ref={contactRef}>
             <div className="typewriter">
-              <h2 className={contactInView ? "animate" : ""}>Contact Me</h2>
+              <h2 className={contactInView ? "animate" : ""}>Contact Me.</h2>
             </div>
             <p className="contact-text">
               Please use the below form to get in contact. Alternatively use the
