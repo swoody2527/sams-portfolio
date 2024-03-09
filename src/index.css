@@ -1,5 +1,6 @@
 :root {
   --main-accent: rgb(27, 146, 27);
+  --main-color: rgb(24, 24, 24)
 }
 
 @font-face {
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--main-color);
 }
 
 h1 {

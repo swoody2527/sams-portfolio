@@ -225,6 +225,17 @@ function App() {
               Please use the below form to get in contact. Alternatively use the
               LinkedIn Icon to contact me there.
             </p>
+            <form className="contact-form">
+              <div className="sender-details">
+              <input placeholder="Name"></input>
+              <input placeholder="Email"></input>
+              </div>
+              <div className="message-details">
+              <input placeholder="Subject"></input>
+              <textarea className="message-body" placeholder="Message"></textarea>
+              </div>
+              <button>Submit</button>
+            </form>
           </div>
         </div>
       </div>

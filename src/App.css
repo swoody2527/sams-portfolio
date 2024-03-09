@@ -159,9 +159,35 @@
 
   height: 500px;
   width: 900px;
+  margin: 10px
 }
 
 .project-container h3 {
   font-size: 40px;
   margin: 10px;
+}
+
+.sender-details {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.message-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, textarea {
+  resize: none;
+  color: white;
+  font-size: 30px;
+  margin: 5px;
+  border: 2px solid var(--main-accent);
+  background-color: var(--main-color) ;
+}
+
+.message-body {
+  width: auto;
+  height: 250px;
 }
