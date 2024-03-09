@@ -178,14 +178,22 @@
   flex-direction: column;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form input, textarea {
+  font-family: Kode Mono;
   resize: none;
   color: white;
   font-size: 30px;
   margin: 5px;
   border: 2px solid var(--main-accent);
   background-color: var(--main-color) ;
+  box-shadow: 10px 10px 20px 10px black;
 }
+
 
 .message-body {
   width: auto;

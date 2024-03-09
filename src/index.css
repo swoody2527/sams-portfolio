@@ -71,9 +71,6 @@ h2 {
   margin-top: 5%;
 }
 
-.cv-btn-projects {
-  font-size: 20px;
-}
 
 .cv-btn:hover {
   border: 2px solid var(--main-accent);

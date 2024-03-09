@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { useInView } from "react-intersection-observer";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   const [aboutMeRef, aboutMeInView] = useInView({
@@ -12,9 +13,6 @@ function App() {
     triggerOnce: true,
   });
 
-  const [contactRef, contactInView] = useInView({
-    triggerOnce: true,
-  });
 
   const [projectsRef, projectsInView] = useInView({
     triggerOnce: true,
@@ -216,28 +214,7 @@ function App() {
           </div>
           <a href="#contact-me" className="arrow down"></a>
         </div>
-        <div className="main-content" id="contact-me">
-          <div className="contact-elements" ref={contactRef}>
-            <div className="typewriter">
-              <h2 className={contactInView ? "animate" : ""}>Contact Me.</h2>
-            </div>
-            <p className="contact-text">
-              Please use the below form to get in contact. Alternatively use the
-              LinkedIn Icon to contact me there.
-            </p>
-            <form className="contact-form">
-              <div className="sender-details">
-              <input placeholder="Name"></input>
-              <input placeholder="Email"></input>
-              </div>
-              <div className="message-details">
-              <input placeholder="Subject"></input>
-              <textarea className="message-body" placeholder="Message"></textarea>
-              </div>
-              <button>Submit</button>
-            </form>
-          </div>
-        </div>
+        <ContactForm></ContactForm>
       </div>
     </div>
   );
