@@ -15,6 +15,8 @@ function ContactForm() {
     message: "",
   });
 
+  const [isSending, setIsSending] = useState(false)
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -22,47 +24,34 @@ function ContactForm() {
     });
   };
 
-  // const handleSubmit = (e) => {
-  //     e.preventDefault()
-
-  //     emailjs.send(
-  //         import.meta.env.VITE_APP_EMAIL_SERVICE_ID,
-  //         import.meta.env.VITE_APP_EMAIL_TEMPLATE_ID,
-  //         formData,
-  //         import.meta.env.VITE_APP_EMAIL_USER_ID
-  //     )
-  //     .then((response) => {
-  //         console.log("success", response)
-  //     })
-  //     .catch((error) => {
-  //         console.log("Error", error)
-  //     })
-  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
   
     const formDataForSubmission = new FormData();
-    formDataForSubmission.append("name", formData.name);
-    formDataForSubmission.append("email", formData.email);
-    formDataForSubmission.append("subject", formData.subject);
-    formDataForSubmission.append("message", formData.message);
 
-    // fetch("https://script.google.com/macros/s/AKfycbxNt_HbNk8QObtvLkYK8_JmSVy1x1MhGz7mMVF2lREHkn-5YTpzKs2TEGzaTEVullzySA/exec", {
-    //   method: "POST",
-    //   body: formDataForSubmission
-    // })
-    // .then(reponse => {
-    //   console.log(Promise.all(reponse.json()), "success");
-    // })
+    Object.keys(formData).forEach(key => {
+      formDataForSubmission.append(key, formData[key])
+    })
+
   
     try {
+      setIsSending(true)
       const response = await axios.post(
         "https://script.google.com/macros/s/AKfycbxNt_HbNk8QObtvLkYK8_JmSVy1x1MhGz7mMVF2lREHkn-5YTpzKs2TEGzaTEVullzySA/exec",
         formDataForSubmission
       );
+
+
   
       console.log("Success", response.data.body);
+      setIsSending(false)
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      })
     } catch (error) {
       console.error("Error occurred", error);
     }
@@ -75,37 +64,36 @@ function ContactForm() {
           <h2 className={contactInView ? "animate" : ""}>Contact Me.</h2>
         </div>
         <p className="contact-text">
-          Please use the below form to get in contact. Alternatively use the
-          LinkedIn Icon to contact me there.
+          Send me a message and I'll get back to you ASAP! Alternatively, contact me via the details below.
         </p>
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="sender-details">
-            <input
+            <input required
               value={formData.name}
               name="name"
               placeholder="Name"
               onChange={handleChange}></input>
-            <input
+            <input required
               value={formData.email}
               name="email"
               placeholder="Email"
               onChange={handleChange}></input>
           </div>
           <div className="message-details">
-            <input
+            <input required
               value={formData.subject}
               name="subject"
               placeholder="Subject"
               onChange={handleChange}></input>
-            <textarea
+            <textarea required
               value={formData.message}
               name="message"
               className="message-body"
               placeholder="Message"
               onChange={handleChange}></textarea>
           </div>
-          <button className="cv-btn" type="submit">
-            Send
+          <button className={`cv-btn ${isSending ? 'sending' : ''}`} type="submit" disabled={isSending}>
+            {isSending ? "Sending..." : "Send"}
           </button>
         </form>
       </div>
