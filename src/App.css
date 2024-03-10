@@ -200,5 +200,19 @@
   height: 250px;
 }
 
+.field-empty-error {
+  opacity: 1;
+  text-align: center;
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.field-empty-error.fade-out {
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
 
 

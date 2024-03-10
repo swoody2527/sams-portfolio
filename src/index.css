@@ -79,7 +79,7 @@ h2 {
 }
 
 .cv-btn.error {
-  animation: horizontal-shaking 1s;
+  animation: horizontal-shaking 0.3s;
   animation-iteration-count: 1;
   border: 2px solid red;
   color: red;
