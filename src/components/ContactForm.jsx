@@ -48,24 +48,24 @@ function ContactForm() {
     formDataForSubmission.append("subject", formData.subject);
     formDataForSubmission.append("message", formData.message);
 
-    fetch("https://script.google.com/macros/s/AKfycbxNt_HbNk8QObtvLkYK8_JmSVy1x1MhGz7mMVF2lREHkn-5YTpzKs2TEGzaTEVullzySA/exec", {
-      method: "POST",
-      body: formDataForSubmission
-    })
-    .then(reponse => {
-      console.log(reponse, "success");
-    })
+    // fetch("https://script.google.com/macros/s/AKfycbxNt_HbNk8QObtvLkYK8_JmSVy1x1MhGz7mMVF2lREHkn-5YTpzKs2TEGzaTEVullzySA/exec", {
+    //   method: "POST",
+    //   body: formDataForSubmission
+    // })
+    // .then(reponse => {
+    //   console.log(Promise.all(reponse.json()), "success");
+    // })
   
-    // try {
-    //   const response = await axios.post(
-    //     "https://script.google.com/macros/s/AKfycbygP-5FREVT41SCywQTxIizAaL2cB-TWTPMhE72ST_G8z9Y3PED0f7OkllVlhe0ppsHwA/exec",
-    //     formDataForSubmission
-    //   );
+    try {
+      const response = await axios.post(
+        "https://script.google.com/macros/s/AKfycbxNt_HbNk8QObtvLkYK8_JmSVy1x1MhGz7mMVF2lREHkn-5YTpzKs2TEGzaTEVullzySA/exec",
+        formDataForSubmission
+      );
   
-    //   console.log("Success", response);
-    // } catch (error) {
-    //   console.error("Error occurred", error);
-    // }
+      console.log("Success", response.data.body);
+    } catch (error) {
+      console.error("Error occurred", error);
+    }
   };
 
   return (
