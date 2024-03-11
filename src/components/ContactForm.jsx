@@ -16,7 +16,9 @@ function ContactForm() {
   });
 
   const [isSending, setIsSending] = useState(false)
+  const [sent, setSent] = useState(false)
   const [isFormEmpty, setIsFormEmpty] = useState(false)
+  const [error, setError] = useState("")
 
   const handleChange = (e) => {
     setFormData({
@@ -56,6 +58,7 @@ function ContactForm() {
   
     try {
       setIsFormEmpty(false)
+      setSent(false)
       setIsSending(true)
       const response = await axios.post(
         "https://script.google.com/macros/s/AKfycbxNt_HbNk8QObtvLkYK8_JmSVy1x1MhGz7mMVF2lREHkn-5YTpzKs2TEGzaTEVullzySA/exec",
@@ -65,6 +68,9 @@ function ContactForm() {
 
   
       console.log("Success", response.data.body);
+
+      setSent(true)
+      setError("")
       setIsSending(false)
       setFormData({
         name: "",
@@ -73,6 +79,7 @@ function ContactForm() {
         message: ""
       })
     } catch (error) {
+      setError(error.body.data)
       console.error("Error occurred", error);
     }
   };
@@ -88,34 +95,34 @@ function ContactForm() {
         </p>
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="sender-details">
-            <input 
+            <input disabled={isSending}
               value={formData.name}
               name="name"
               placeholder="Name"
               onChange={handleChange}></input>
-            <input 
+            <input disabled={isSending}
               value={formData.email}
               name="email"
               placeholder="Email"
               onChange={handleChange}></input>
           </div>
           <div className="message-details">
-            <input 
+            <input disabled={isSending}
               value={formData.subject}
               name="subject"
               placeholder="Subject"
               onChange={handleChange}></input>
-            <textarea 
+            <textarea disabled={isSending}
               value={formData.message} //`cv-btn ${isSending ? 'sending' : ''}`
               name="message"
               className="message-body"
               placeholder="Message"
               onChange={handleChange}></textarea>
           </div>
-          <button className={isFormEmpty ? "cv-btn error" : `cv-btn ${isSending ? 'sending' : ''}`} type="submit" disabled={isSending}>
-            {isSending ? "Sending..." : "Send"}
+          <button className={isFormEmpty || error ? "cv-btn error" : `cv-btn ${isSending ? 'sending' : ''}`} type="submit" disabled={isSending}>
+            {isSending ? "Sending..." : sent ? "Sent!" : "Send"}
           </button>
-          <p className={`field-empty-error ${!isFormEmpty ? 'fade-out' : ''}`}>Please fill all fields!</p>
+          <p className={`field-empty-error ${!isFormEmpty ? 'fade-out' : ''}`}>{error ? `${error}` : "Please fill all fields!"}</p>
         </form>
       </div>
     </div>
