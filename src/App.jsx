@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import { useInView } from "react-intersection-observer";
 import ContactForm from "./components/ContactForm";
+import projectsInfo from "./projects-info";
 
 function App() {
   const [aboutMeRef, aboutMeInView] = useInView({
@@ -17,7 +18,11 @@ function App() {
     triggerOnce: true,
   });
 
-  const images = ["src/assets/me.png","src/assets/CSS3_logo.svg.png","src/assets/javascript-js.svg"]
+  const images = [
+    "src/assets/me.png",
+    "src/assets/CSS3_logo.svg.png",
+    "src/assets/javascript-js.svg",
+  ];
 
   return (
     <div className="app-container">
@@ -116,113 +121,34 @@ function App() {
               <h2 className={projectsInView ? "animate" : ""}>Projects.</h2>
             </div>
             <div className="project-list">
-              <div className="project-container">
-                <h3>PlayPal</h3>
-                <div className="project-content">
-                  <img
-                    className="project-img"
-                    src="src/assets/project-images/playpal-img.png"></img>
-                    <p>
-                      A fully fledged gaming social media application to connect
-                      like-minded gamers. View information relating to your
-                      favourite games and leave a user rating to connect with
-                      others based on similar interests. Create chat rooms to
-                      organise gaming sessions and book them in on a calender
-                      system to view at any time.
-                    </p>
-                </div>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  View Repo
-                </button>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  Hosted Site
-                </button>
-              </div>
-              <div className="project-container">
-                <h3>NC News</h3>
-                <div className="project-content">
-                  <img
-                    className="project-img"
-                    src="src/assets/project-images/nc-news-image.png"></img>
-                  <p>
-                    A community based news board where users can filter based on
-                    rating, category, publish date to read up on current topics.
-                    Upon creating an account, users can also leave ratings and
-                    comments to express their opinion on certain articles. This
-                    project makes use of the NC News API listed below.
-                  </p>
-                </div>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  View Repo
-                </button>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  Hosted Site
-                </button>
-              </div>
-              <div className="project-container">
-                <h3>NC News API</h3>
-                <div className="project-content">
-                  <img
-                    className="project-img"
-                    src="src/assets/project-images/nc-news-api.png"></img>
-                  <p>
-                    Fully Tested REST API created to hook into a PSQL database
-                    and utilise a multitude of endpoints to serve information
-                    relating to published articles and users of the NC News
-                    community news board.
-                  </p>
-                </div>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  View Repo
-                </button>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  Hosted Site
-                </button>
-              </div>
-              <div className="project-container">
-                <h3>Repper</h3>
-                <div className="project-content">
-                  <img
-                    className="project-img"
-                    src="src/assets/project-images/repper.png"></img>
-                  <p>
-                    A fitness based web application designed to provide users
-                    with a streamlined solution to tracking their current
-                    weightlifting progress. Create a plan and track each day's
-                    details such as exercises, weight, goal amount of reps and
-                    previously achieved amount of reps. Based on the details you
-                    provide, Repper will automatically adjust your plan when you
-                    achieve your goals to keep you pushing harder.
-                  </p>
-                </div>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  View Repo
-                </button>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  Hosted Site
-                </button>
-              </div>
-              <div className="project-container">
-                <h3>SubTrack</h3>
-                <div className="project-content">
-                  <img
-                    className="project-img"
-                    src="src/assets/project-images/sub-track.png"></img>
-                  <p>
-                    A desktop application created to help users keep track of
-                    their outgoing subscriptions. When you sign up to a new
-                    subscription based service, log its details and renewal date
-                    in SubTrack so you can view all upcoming and recent charges
-                    in one place.
-                  </p>
-                </div>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  View Repo
-                </button>
-                <button className="cv-btn" style={{ fontSize: "30px" }}>
-                  Hosted Site
-                </button>
-              </div>
+              {projectsInfo.map((project) => {
+                return (
+                  <div className="project-container">
+                    <h3>{project.name}</h3>
+                    <div className="project-content">
+                      <img
+                        className="project-img"
+                        src={project.projectImg}></img>
+                      <p>{project.info}</p>
+                      <div className="tech-stack">
+                        {project.techStackImgs.map((img) => {
+                          return <img src={img}></img>;
+                        })}
+                      </div>
+                    </div>
+                    <a
+                      target="_blank"
+                      href={project.repoUrl}
+                      className="cv-btn"
+                      style={{ fontSize: "30px" }}>
+                      View Repo
+                    </a>
+                    <a className="cv-btn" style={{ fontSize: "30px" }}>
+                      Hosted Site
+                    </a>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <a href="#about-me" className="arrow down"></a>

@@ -142,10 +142,12 @@
   
   border: 3px solid var(--main-accent);
   padding: 25px;
+  padding-bottom: 0;
   color: var(--main-accent);
   margin: 30px;
   text-align: center;
   box-shadow: 10px 10px 10px 10px black;
+  position: relative;
 }
 
 .project-content {
@@ -176,7 +178,14 @@
   transition: transform 0.3s ease;
 }
 
+.tech-stack img {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+}
+
 .project-img:hover {
+  z-index: 1;
   border: 3px solid var(--main-accent);
   transform: scale(1.5);
 }
@@ -186,9 +195,13 @@
   margin: 10px;
 }
 
-.project-container button {
-  margin: 10px;
+.project-container a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 5px;
 }
+
 
 .sender-details {
   display: flex;
