@@ -13,7 +13,6 @@ function App() {
     triggerOnce: true,
   });
 
-
   const [projectsRef, projectsInView] = useInView({
     triggerOnce: true,
   });
@@ -114,22 +113,32 @@ function App() {
             <div className="typewriter">
               <h2 className={projectsInView ? "animate" : ""}>Projects.</h2>
             </div>
-
+            <div className="project-list">
             <div className="project-container">
               <h3>PlayPals</h3>
               <div className="project-content">
-                <div className="project-info">
-                <p>
-                  Project description will go here to describe my project and
-                  what is is about
-                </p>
-                <button className="cv-btn" style={{fontSize: "30px"}}>View Repo</button>
-                <button className="cv-btn" style={{fontSize: "30px"}}>Hosted Site</button>
-                </div>
                 <img
                   className="project-img"
                   src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
+                <div className="project-info">
+                  <p>
+                    PlayPal is an online social media gaming web application
+                    built using Svelte and Firebase. Leveraging the RAWG Games
+                    Database API, PlayPal offers users the ability to view
+                    detailed information about their favourite video games.
+                    PlayPal's main features include the ability for users to
+                    review games, connect with other users based on their
+                    reviews, private and group message, and schedule gaming
+                    sessions via a calender system. To view more please
+                  </p>
+                </div>
               </div>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                View Repo
+              </button>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                Hosted Site
+              </button>
             </div>
             <div className="project-container">
               <h3>NC News</h3>
@@ -138,22 +147,37 @@ function App() {
                   className="project-img"
                   src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
                 <p>
-                  Project description will go here to describe my project and
-                  what is is about
+                  As my first deep dive project into React, NC News was created as an online
+                  community news board designed to allow users to view user
+                  published news articles on a variety of subjects. After
+                  creating an account users are then able to leave comments
                 </p>
               </div>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                View Repo
+              </button>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                Hosted Site
+              </button>
             </div>
             <div className="project-container">
               <h3>NC News API</h3>
               <div className="project-content">
                 <p>
-                  Project description will go here to describe my project and
-                  what is is about
+                  Fully Tested RESTful API created to hook into a PSQL database
+                  and utilise a multitude of endpoints to serve information relating
+                  to users and published articles of a community news board.
                 </p>
                 <img
                   className="project-img"
                   src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
               </div>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                View Repo
+              </button>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                Hosted Site
+              </button>
             </div>
             <div className="project-container">
               <h3>Repper</h3>
@@ -162,10 +186,15 @@ function App() {
                   className="project-img"
                   src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
                 <p>
-                  Project description will go here to describe my project and
-                  what is is about
+
                 </p>
               </div>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                View Repo
+              </button>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                Hosted Site
+              </button>
             </div>
             <div className="project-container">
               <h3>SubTrack</h3>
@@ -178,6 +207,13 @@ function App() {
                   className="project-img"
                   src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/stock-photography/thumbnail.jpeg"></img>
               </div>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                View Repo
+              </button>
+              <button className="cv-btn" style={{ fontSize: "30px" }}>
+                Hosted Site
+              </button>
+            </div>
             </div>
           </div>
           <a href="#about-me" className="arrow down"></a>

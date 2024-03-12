@@ -24,14 +24,14 @@ function NavBar() {
         </div>
         <div className="nav-images">
           <li>
-            <a href="/">
+            <a href="https://github.com/swoody2527" target="_blank">
               <img
                 className="github-img"
                 src="src/assets/github-logo.png"></img>
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://www.linkedin.com/in/sam-woodall-41790128b/" target="_blank">
               <img src="src/assets/In-White-40-Γö¼┬½.png"></img>
             </a>
           </li>
