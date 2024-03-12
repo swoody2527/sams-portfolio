@@ -134,7 +134,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 90vw;
 }
 
 .project-container {
@@ -145,6 +145,7 @@
   color: var(--main-accent);
   margin: 30px;
   text-align: center;
+  box-shadow: 10px 10px 10px 10px black;
 }
 
 .project-content {
@@ -170,9 +171,14 @@
 } */
 
 .project-img {
-
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  border: 3px solid var(--main-accent);
+  transform: scale(1.5);
 }
 
 .project-container h3 {
