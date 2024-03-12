@@ -138,7 +138,9 @@
 }
 
 .project-container {
-  width: 700px;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
   
   border: 3px solid var(--main-accent);
   padding: 25px;
@@ -178,6 +180,7 @@
   transition: transform 0.3s ease;
 }
 
+
 .tech-stack img {
   height: 70px;
   width: 70px;
@@ -195,7 +198,11 @@
   margin: 10px;
 }
 
-.project-container a {
+.project-footer {
+  margin-top: auto;
+}
+
+.project-footer a {
   display: block;
   text-decoration: none;
   margin-bottom: 20px;

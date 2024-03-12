@@ -130,12 +130,13 @@ function App() {
                         className="project-img"
                         src={project.projectImg}></img>
                       <p>{project.info}</p>
-                      <div className="tech-stack">
+                    </div>
+                    <div className="project-footer">
+                    <div className="tech-stack">
                         {project.techStackImgs.map((img) => {
                           return <img src={img}></img>;
                         })}
                       </div>
-                    </div>
                     <a
                       target="_blank"
                       href={project.repoUrl}
@@ -146,6 +147,7 @@ function App() {
                     <a className="cv-btn" style={{ fontSize: "30px" }}>
                       Hosted Site
                     </a>
+                    </div>
                   </div>
                 );
               })}
