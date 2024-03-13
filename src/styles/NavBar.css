@@ -99,10 +99,28 @@ body {
   
 }
 
-
-
-
 .github-img {
   height: 50px;
   width: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: row;
+      width: 100vw;
+      height: auto;
+      justify-content: center;
+      padding: 10px 0;
+      position: fixed;
+      box-shadow: none;
+      z-index: 10;
+  }
+  .navbar ul {
+      flex-direction: row;
+  }
+  .navbar li {
+      margin-top: 0;
+      margin-right: 20px;
+  }
 }
