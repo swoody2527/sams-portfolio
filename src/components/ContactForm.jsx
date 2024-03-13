@@ -91,7 +91,7 @@ function ContactForm() {
           <h2 className={contactInView ? "animate" : ""}>Contact Me.</h2>
         </div>
         <p className="contact-text">
-          Send me a message and I'll get back to you ASAP! Alternatively, contact me via the details below.
+          Send me a message and I'll get back to you ASAP! Alternatively, contact me via the email below.
         </p>
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="sender-details">

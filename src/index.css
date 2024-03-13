@@ -60,6 +60,12 @@ h2 {
   text-align: center;
 }
 
+.about-me-text {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 3px black;
+}
+
 .cv-btn {
   transition: all 1s ease;
   font-family: Kode Mono;

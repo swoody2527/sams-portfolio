@@ -44,7 +44,7 @@ function App() {
               technologies. Welcome to my portfolio website.
             </p>
           </div>
-          <button className="cv-btn">Resume / CV</button>
+          <a target="_blank" href="src/assets/Sam Woodall - CV.pdf"><button className="cv-btn">Resume / CV</button></a>
           <a href="#skillset" className="arrow down"></a>
         </div>
 
@@ -53,7 +53,7 @@ function App() {
             <div className="typewriter">
               <h2 className={skillsetInView ? "animate" : ""}>Skillset</h2>
             </div>
-            <p className="skillset-text"></p>
+            <a href="#projects" className="arrow down"></a>
           </div>
           <div className="skills-container">
             <div className="skill">
@@ -112,7 +112,6 @@ function App() {
               <p>Group Collaboration</p>
             </div>
           </div>
-          <a href="#projects" className="arrow down"></a>
         </div>
 
         <div className="main-content" id="projects">
@@ -120,6 +119,7 @@ function App() {
             <div className="typewriter">
               <h2 className={projectsInView ? "animate" : ""}>Projects.</h2>
             </div>
+            <a href="#about-me" className="arrow down"></a>
             <div className="project-list">
               {projectsInfo.map((project) => {
                 return (
@@ -153,7 +153,6 @@ function App() {
               })}
             </div>
           </div>
-          <a href="#about-me" className="arrow down"></a>
         </div>
 
         <div className="main-content" id="about-me">
@@ -161,33 +160,38 @@ function App() {
             <div className="typewriter">
               <h2 className={aboutMeInView ? "animate" : ""}>About Me.</h2>
             </div>
+            <a href="#contact-me" className="arrow down"></a>
             <img className="hero-pic" src="src/assets/me.png"></img>
+            <div className="long-short-toggle">
+            </div>
 
-            <p style={{ color: "white" }} className="about-me-text">
+            <p className="about-me-text">
               Hello there! I'm Sam Woodall, a Software Devloper based in West
               Sussex, UK. For me, the joy in coding stems from the continual
-              problem solving required to create great code. Breaking down
-              problems, solving them piece by piece and then scaling them back
-              up to the point where you can step back to look at a functioning
-              tangible creation, I find, is immensily satisfying. The fact that
-              there is never one road to a solution with coding continually
-              makes the experience exciting and opens up endless oppurtunities
-              to learn and expand my skillset. I am commited to the endless
+              problem solving required to create great code. Breaking down a 
+              project and solving it piece by piece is an immensely satisfying
+              process, especially when you bring it all back together to have
+              a tangible, function creation at the end. I am commited to the endless
               learning journey that comes with a career in Software Development
-              and I am eager to continue to learn and create fantastic
+              and I am eager to continue expanding my skillset and create fantastic
               programming solutions.
             </p>
 
-            <p style={{ color: "white" }} className="about-me-text">
+            <p className="about-me-text">
               Outside of coding, I like to keep up with my personal fitness
               through weightlifting and running. I also love foreign language
-              learning and have been studying Korean as my focus, both formally
-              and self study, for around 7 years now.
+              learning and have been studying Korean as my focus for around 
+              7 years now. 
             </p>
+
+            <p className="about-me-text">Thank you for taking the time to look at my portfolio website!</p>
           </div>
-          <a href="#contact-me" className="arrow down"></a>
         </div>
         <ContactForm></ContactForm>
+        <div className="contact-details">
+          <img src="src/assets/icons8-email-48.png"></img>
+          <p>swoodall2527@gmail.com </p>
+        </div>
       </div>
     </div>
   );
