@@ -189,11 +189,11 @@ body {
 @media (max-width: 768px) {
   
   .nav-links {
-    display: none; /* Hide the links initially on smaller screens */
+    display: none;
   }
 
   .menu-toggle {
-    display: block; /* Show the hamburger menu */
+    display: block;
     cursor: pointer;
   }
 
