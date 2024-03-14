@@ -113,7 +113,7 @@ function ContactForm() {
               placeholder="Subject"
               onChange={handleChange}></input>
             <textarea disabled={isSending}
-              value={formData.message} //`cv-btn ${isSending ? 'sending' : ''}`
+              value={formData.message}
               name="message"
               className="message-body"
               placeholder="Message"
