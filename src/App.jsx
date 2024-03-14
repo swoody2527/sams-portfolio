@@ -189,11 +189,22 @@ function App() {
         </div>
         <ContactForm></ContactForm>
         <div className="contact-details">
+          <div className="contact-me-email">
           <img src="src/assets/icons8-email-48.png"></img>
           <p>swoodall2527@gmail.com </p>
+          </div>
+          <div className="contact-me-socials">
+        <a href="https://github.com/swoody2527" target="_blank" rel="noopener noreferrer">
+          <img className="github-img" src="src/assets/github-logo.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/sam-woodall-41790128b/" target="_blank" rel="noopener noreferrer">
+          <img src="src/assets/In-White-40-Γö¼┬½.png" alt="LinkedIn" />
+        </a>
+        </div>
+        </div>
         </div>
       </div>
-    </div>
+
   );
 }
 

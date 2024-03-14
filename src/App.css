@@ -261,6 +261,21 @@
   transform: scale(1.5);
 }
 
+@media (max-width: 768px) {
+  .tech-stack img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .project-content {
+    font-size: 17px;
+  }
+
+  .project-img {
+    
+  }
+}
+
 .project-container h3 {
   font-size: 40px;
   margin: 10px;
@@ -330,10 +345,11 @@
 
 .contact-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   border: 3px solid var(--main-accent);
   font-family: Kode Mono;
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
   color: var(--main-accent);
   align-items: center;
@@ -346,6 +362,15 @@
 }
 .contact-details img {
   margin-right: 10px;
+}
+
+.contact-me-email {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-me-socials img {
+  height: 50px;
 }
 
 
