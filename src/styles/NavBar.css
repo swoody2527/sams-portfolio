@@ -13,6 +13,10 @@ body {
     font-weight: bold;
 }
 
+.site-title-vertical {
+  display: none;
+}
+
 
 .navbar {
     position: fixed;
@@ -46,9 +50,6 @@ body {
     text-decoration: none;
 }
 
-.navbar li {
-  margin-top: 30px;
-}
 
 .navbar ul {
 
@@ -57,7 +58,7 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+
 }
 
 .navbar ul a {
@@ -92,6 +93,10 @@ body {
   transform: scaleX(1);
 }
 
+.navbar li {
+  margin-bottom: 15px;
+}
+
 .nav-images {
   position: absolute;
   bottom: 20px;
@@ -110,17 +115,102 @@ body {
       flex-direction: row;
       width: 100vw;
       height: auto;
-      justify-content: center;
+      justify-content: space-between;
       padding: 10px 0;
       position: fixed;
       box-shadow: none;
       z-index: 10;
   }
-  .navbar ul {
-      flex-direction: row;
+  
+
+
+  .nav-images {
+    display: none;
   }
-  .navbar li {
-      margin-top: 0;
-      margin-right: 20px;
+
+  @keyframes breatheGlow {
+    0% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    }
+    100% {
+      box-shadow: 0 0 50px var(--main-accent); 
+    }
+  }
+
+  .site-title {
+    display: none;
+}
+
+.site-title-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-title-vertical span {
+  font-size: 30px ;
+  font-weight: bold;
+    color: var(--main-accent);
+    margin-left: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: block;
+  top: 100%;
+  right:  0;
+  width: 30%;
+  background-color: #333;
+  padding: 10px;
+  transition: 1s opacity ease;
+  opacity: 0;
+}
+
+
+.dropdown-menu.show {
+  display: block;
+  transition: 1s opacity ease;
+  opacity: 1;
+}
+
+
+
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  
+  .nav-links {
+    display: none; /* Hide the links initially on smaller screens */
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger menu */
+    cursor: pointer;
+  }
+
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-accent);
+    margin: 5px;
+    margin-right: 20px;
+    transition: 0.4s;
+  }
+
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
