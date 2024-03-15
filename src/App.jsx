@@ -40,7 +40,7 @@ function App() {
               <span style={{ color: "white" }}>
                 Full-Stack Software Engineer
               </span>{" "}
-              who loves forging great programming solutions and exploring new
+              creating great programming solutions and exploring new
               technologies. Welcome to my portfolio website.
             </p>
           </div>

@@ -107,11 +107,13 @@ body {
 
 .nav-images a {
   margin-top: 10px;
-}
-
-.github-img {
   height: 50px;
   width: 50px;
+}
+
+.nav-images img {
+  max-height: 50px;
+  max-width: 50px;
 }
 
 

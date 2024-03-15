@@ -65,6 +65,12 @@ h2 {
   padding-right: 20px;
 }
 
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 15px;
+  }
+}
+
 .about-me-text, .skillset-text, .contact-text, .projects-text {
   color: var(--main-accent);
   font-size: 20.5px;
@@ -97,6 +103,12 @@ h2 {
   color: var(--main-accent);
   background-color: #333;
   margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .cv-btn {
+    font-size: 25px;
+  }
 }
 
 
