@@ -130,6 +130,9 @@ function App() {
                         className="project-img"
                         src={project.projectImg}></img>
                       <p>{project.info}</p>
+                      {project.name === "NC News API" ? <p style={{color: "Yellow"}}>Please note 
+                      NC News API is hosted for free on Render, it may require 30 seconds to spin up,
+                      and a refresh!</p> : null}
                     </div>
                     <div className="project-footer">
                     <div className="tech-stack">
@@ -144,8 +147,11 @@ function App() {
                       style={{ fontSize: "30px" }}>
                       View Repo
                     </a>
-                    <a className="cv-btn" style={{ fontSize: "30px" }}>
-                      Hosted Site
+                    <a 
+                    href={project.altUrl[1]}
+                    target="_blank"
+                    className="cv-btn" style={{ fontSize: "30px" }}>
+                      {project.altUrl[0] === "video" ? "Demo Video" : "Live Site"}
                     </a>
                     </div>
                   </div>

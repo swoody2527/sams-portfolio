@@ -10,7 +10,7 @@ const projectsInfo = [
         projectImg: "src/assets/project-images/playpal-img.png",
         techStackImgs: ["src/assets/svelte-logo.png", "src/assets/firebase.svg", "src/assets/javascript-js.svg", "src/assets/CSS3_logo.svg.png"],
         repoUrl: "https://github.com/matthew-1313/PlayPal-FrontEnd",
-        altUrl: ""
+        altUrl: ["video", "https://www.youtube.com/watch?v=Ph1O8hTawh4"]
     },
     {
         name: "NC News",
@@ -26,7 +26,7 @@ const projectsInfo = [
             "src/assets/CSS3_logo.svg.png"
         ],
         repoUrl: "https://github.com/swoody2527/NC-News-Front-End",
-        altUrl: ""
+        altUrl: ["video", "https://www.youtube.com/watch?v=an56rQCogps"]
     },
     {
         name: "NC News API",
@@ -43,7 +43,7 @@ const projectsInfo = [
 
         ],
         repoUrl: "https://github.com/swoody2527/NC-News-API",
-        altUrl: ""
+        altUrl: ["site", "https://be-nc-news-sopv.onrender.com/api"]
     },
     {
         name: "Repper",
@@ -62,7 +62,7 @@ const projectsInfo = [
             "src/assets/CSS3_logo.svg.png"
         ],
         repoUrl: "https://github.com/swoody2527/Repper/tree/main/final-project",
-        altUrl: ""
+        altUrl: ["video", "https://www.youtube.com/watch?v=s5XpMwqDfYQ"]
     },
     {
         name: "SubTrack",
@@ -77,7 +77,7 @@ const projectsInfo = [
             "src/assets/Postgresql_elephant.svg.png",
         ],
         repoUrl: "https://github.com/swoody2527/SubTrack",
-        altUrl: ""
+        altUrl: ["video", "https://youtu.be/IQ3UfdIb_cM"]
     }
 ]
 
