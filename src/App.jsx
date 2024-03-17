@@ -39,7 +39,7 @@ function App() {
               technologies.
             </p>
           </div>
-          <a target="_blank" href="src/assets/Sam Woodall - CV.pdf"><button className="cv-btn">Resume / CV</button></a>
+          <a target="_blank" href="assets/Sam Woodall - CV.pdf"><button className="cv-btn">Resume / CV</button></a>
           <a href="#skillset" className="arrow down"></a>
         </div>
 
@@ -52,58 +52,58 @@ function App() {
           </div>
           <div className="skills-container">
             <div className="skill">
-              <img src="src/assets/javascript-js.svg"></img>
+              <img src="assets/javascript-js.svg"></img>
               <p>JavaScript</p>
             </div>
             <div className="skill">
-              <img src="src/assets/590px-Node.js_logo.svg.png"></img>
+              <img src="assets/590px-Node.js_logo.svg.png"></img>
               <p>Node.js</p>
             </div>
             <div className="skill">
-              <img src="src/assets/express_logo.png"></img>
+              <img src="assets/express_logo.png"></img>
               <p>Express</p>
             </div>
             <div className="skill">
-              <img src="src/assets/Python_logo_01.svg"></img>
+              <img src="assets/Python_logo_01.svg"></img>
               <p>Python</p>
             </div>
             <div className="skill">
-              <img src="src/assets/Jest.svg"></img>
+              <img src="assets/Jest.svg"></img>
               <p>Jest</p>
             </div>
             <div className="skill">
-              <img src="src/assets/firebase.svg"></img>
+              <img src="assets/firebase.svg"></img>
               <p>Firebase</p>
             </div>
             <div className="skill">
-              <img src="src/assets/Postgresql_elephant.svg.png"></img>
+              <img src="assets/Postgresql_elephant.svg.png"></img>
               <p>PSQL</p>
             </div>
             <div className="skill">
-              <img src="src/assets/html5.png"></img>
+              <img src="assets/html5.png"></img>
               <p>HTML</p>
             </div>
             <div className="skill">
-              <img src="src/assets/CSS3_logo.svg.png"></img>
+              <img src="assets/CSS3_logo.svg.png"></img>
               <p>CSS</p>
             </div>
             <div className="skill">
-              <img src="src/assets/react.svg"></img>
+              <img src="assets/react.svg"></img>
               <p>React</p>
             </div>
           </div>
 
           <div className="skills-container">
             <div className="skill">
-              <img src="src/assets/programming.png"></img>
+              <img src="assets/programming.png"></img>
               <p>Paired Programming</p>
             </div>
             <div className="skill">
-              <img src="src/assets/scrum.png"></img>
+              <img src="assets/scrum.png"></img>
               <p>SCRUM & Agile</p>
             </div>
             <div className="skill">
-              <img src="src/assets/team.png"></img>
+              <img src="assets/team.png"></img>
               <p>Group Collaboration</p>
             </div>
           </div>
@@ -162,7 +162,7 @@ function App() {
               <h2 className={aboutMeInView ? "animate" : ""}>About Me.</h2>
             </div>
             <a href="#contact-me" className="arrow down"></a>
-            <img className="hero-pic" src="src/assets/me.png"></img>
+            <img className="hero-pic" src="assets/me.png"></img>
             <div className="long-short-toggle">
             </div>
 
@@ -191,15 +191,15 @@ function App() {
         <ContactForm></ContactForm>
         <div className="contact-details">
           <div className="contact-me-email">
-          <img src="src/assets/icons8-email-48.png"></img>
+          <img src="assets/icons8-email-48.png"></img>
           <p>swoodall2527@gmail.com </p>
           </div>
           <div className="contact-me-socials">
         <a href="https://github.com/swoody2527" target="_blank" rel="noopener noreferrer">
-          <img className="github-img" src="src/assets/github-logo.png" alt="GitHub" />
+          <img className="github-img" src="assets/github-logo.png" alt="GitHub" />
         </a>
         <a href="https://www.linkedin.com/in/sam-woodall-41790128b/" target="_blank" rel="noopener noreferrer">
-          <img src="src/assets/In-White-40-Γö¼┬½.png" alt="LinkedIn" />
+          <img src="assets/In-White-40-Γö¼┬½.png" alt="LinkedIn" />
         </a>
         </div>
         </div>

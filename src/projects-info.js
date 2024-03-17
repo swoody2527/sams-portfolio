@@ -7,8 +7,8 @@ const projectsInfo = [
                 others based on similar interests. Create chat rooms to
                 organise gaming sessions and book them in on a calender
                 system to view at any time.`,
-        projectImg: "src/assets/project-images/playpal-img.png",
-        techStackImgs: ["src/assets/svelte-logo.png", "src/assets/firebase.svg", "src/assets/javascript-js.svg", "src/assets/CSS3_logo.svg.png"],
+        projectImg: "assets/project-images/playpal-img.png",
+        techStackImgs: ["assets/svelte-logo.png", "assets/firebase.svg", "assets/javascript-js.svg", "assets/CSS3_logo.svg.png"],
         repoUrl: "https://github.com/matthew-1313/PlayPal-FrontEnd",
         altUrl: ["video", "https://www.youtube.com/watch?v=Ph1O8hTawh4"]
     },
@@ -19,11 +19,11 @@ const projectsInfo = [
               Upon creating an account, users can also leave ratings and
               comments to express their opinion on certain articles. This
               project makes use of the NC News API listed below.`,
-        projectImg: "src/assets/project-images/nc-news-image.png",
+        projectImg: "assets/project-images/nc-news-image.png",
         techStackImgs: [
-            "src/assets/javascript-js.svg",
-            "src/assets/react.svg",
-            "src/assets/CSS3_logo.svg.png"
+            "assets/javascript-js.svg",
+            "assets/react.svg",
+            "assets/CSS3_logo.svg.png"
         ],
         repoUrl: "https://github.com/swoody2527/NC-News-Front-End",
         altUrl: ["video", "https://www.youtube.com/watch?v=an56rQCogps"]
@@ -34,12 +34,12 @@ const projectsInfo = [
         and utilise a multitude of endpoints to serve information
         relating to published articles and users of the NC News
         community news board.`,
-        projectImg: "src/assets/project-images/nc-news-api.png",
+        projectImg: "assets/project-images/nc-news-api.png",
         techStackImgs: [
-            "src/assets/node-js-svgrepo-com.svg",
-            "src/assets/Jest.svg",
-            "src/assets/express-js.png",
-            "src/assets/Postgresql_elephant.svg.png"
+            "assets/node-js-svgrepo-com.svg",
+            "assets/Jest.svg",
+            "assets/express-js.png",
+            "assets/Postgresql_elephant.svg.png"
 
         ],
         repoUrl: "https://github.com/swoody2527/NC-News-API",
@@ -54,12 +54,12 @@ const projectsInfo = [
         previously achieved amount of reps. Based on the details you
         provide, Repper will automatically adjust your plan when you
         achieve your goals to keep you pushing harder.`,
-        projectImg: "src/assets/project-images/repper.png",
+        projectImg: "assets/project-images/repper.png",
         techStackImgs: [
-            "src/assets/Python_logo_01.svg",
-            "src/assets/flask.svg",
-            "src/assets/jinja.png",
-            "src/assets/CSS3_logo.svg.png"
+            "assets/Python_logo_01.svg",
+            "assets/flask.svg",
+            "assets/jinja.png",
+            "assets/CSS3_logo.svg.png"
         ],
         repoUrl: "https://github.com/swoody2527/Repper/tree/main/final-project",
         altUrl: ["video", "https://www.youtube.com/watch?v=s5XpMwqDfYQ"]
@@ -71,10 +71,10 @@ const projectsInfo = [
         subscription based service, log its details and renewal date
         in SubTrack so you can view all upcoming and recent charges
         in one place.`,
-        projectImg: "src/assets/project-images/sub-track.png",
+        projectImg: "assets/project-images/sub-track.png",
         techStackImgs: [
-            "src/assets/Python_logo_01.svg",
-            "src/assets/Postgresql_elephant.svg.png",
+            "assets/Python_logo_01.svg",
+            "assets/Postgresql_elephant.svg.png",
         ],
         repoUrl: "https://github.com/swoody2527/SubTrack",
         altUrl: ["video", "https://youtu.be/IQ3UfdIb_cM"]
