@@ -26,7 +26,7 @@ function App() {
         <div className="main-content-hero">
           <div className="typewriter">
             <h1>
-              Hello! I'm <span className="my-name">Sam</span>
+              Hello! I'm <span className="my-name">Sam.</span>
             </h1>
           </div>
           <div className="hero-elements">
