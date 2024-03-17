@@ -18,11 +18,6 @@ function App() {
     triggerOnce: true,
   });
 
-  const images = [
-    "src/assets/me.png",
-    "src/assets/CSS3_logo.svg.png",
-    "src/assets/javascript-js.svg",
-  ];
 
   return (
     <div className="app-container">
@@ -31,7 +26,7 @@ function App() {
         <div className="main-content-hero">
           <div className="typewriter">
             <h1>
-              Hello! I'm <span className="my-name">Sam</span>.
+              Hello! I'm <span className="my-name">Sam</span> SW.
             </h1>
           </div>
           <div className="hero-elements">
@@ -41,7 +36,7 @@ function App() {
                 Full-Stack Software Engineer
               </span>{" "}
               creating great programming solutions and exploring new
-              technologies. Welcome to my portfolio website.
+              technologies.
             </p>
           </div>
           <a target="_blank" href="src/assets/Sam Woodall - CV.pdf"><button className="cv-btn">Resume / CV</button></a>
