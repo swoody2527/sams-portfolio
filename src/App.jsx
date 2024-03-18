@@ -40,7 +40,6 @@ function App() {
             </p>
           </div>
           <a target="_blank" href="assets/Sam Woodall - CV.pdf"><button className="cv-btn">Resume / CV</button></a>
-          <a href="#skillset" className="arrow down"></a>
         </div>
 
         <div className="main-content" id="skillset">
