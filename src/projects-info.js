@@ -1,7 +1,7 @@
 const projectsInfo = [
     {
         name: 'TMysticaStats',
-        info: `TMysticaStats is a data visualisation platform the boardgame Terra Mystica.
+        info: `TMysticaStats is a data visualisation platform for the boardgame Terra Mystica.
                 Around 12 years of game data was cleaned through a processing pipeline and
                 used to compute various game-related statistical metrics to enhance strategic
                 choice. This data was also used to train a classification model to provide 
