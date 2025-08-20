@@ -1,5 +1,36 @@
 const projectsInfo = [
     {
+        name: 'TMysticaStats',
+        info: `TMysticaStats is a data visualisation platform the boardgame Terra Mystica.
+                Around 12 years of game data was cleaned through a processing pipeline and
+                used to compute various game-related statistical metrics to enhance strategic
+                choice. This data was also used to train a classification model to provide 
+                predictions of game outcomes. Stats are computed on-demand through user 
+                provided filters, allowing for tailored searches.`,
+        projectImg: 'assets/project-images/tmystica.png',
+        techStackImgs: ['assets/Python_logo_01.svg',
+                        'assets/flask.svg',
+                        'assets/Pandas_mark.svg.png',
+                         "assets/react.svg"],
+        repoUrl: 'https://github.com/swoody2527/TMysticaStats',
+        altUrl: ['site', 'https://tmysticastats.netlify.app/']
+    },
+    {
+        name: 'GeckoNews',
+        info: `GeckoNews is a community newsboard aimed at journalists. Global news
+        articles are aggregated with an RSS feed and can be rated for accuracy, bias 
+        and insight. Foreign language articles may be translated in app.`,
+        projectImg: 'assets/project-images/GeckoNews.png',
+        techStackImgs: ['assets/react.svg',
+                        'assets/Python_logo_01.svg',
+                        'assets/mongodb.svg',
+                        'assets/Oauth_logo.svg.png',
+                        'assets/electron.png'
+
+        ],
+        repoUrl: 'https://github.com/ESRS-Group/React-Interface',
+    },
+    {
         name: "PlayPal",
         info:  `A fully fledged gaming social media application to connect
                 like-minded gamers. View information relating to your
@@ -12,27 +43,13 @@ const projectsInfo = [
         repoUrl: "https://github.com/matthew-1313/PlayPal-FrontEnd",
         altUrl: ["video", "https://www.youtube.com/watch?v=Ph1O8hTawh4"]
     },
-    {
-        name: "NC News",
-        info: `A community based news board where users can filter based on
-              rating, category, publish date to read up on current topics.
-              Upon creating an account, users can also leave ratings and
-              comments to express their opinion on certain articles. This
-              project makes use of the NC News API listed below.`,
-        projectImg: "assets/project-images/nc-news-image.png",
-        techStackImgs: [
-            "assets/javascript-js.svg",
-            "assets/react.svg",
-            "assets/CSS3_logo.svg.png"
-        ],
-        repoUrl: "https://github.com/swoody2527/NC-News-Front-End",
-        altUrl: ["video", "https://www.youtube.com/watch?v=an56rQCogps"]
-    },
+    
+
     {
         name: "NC News API",
         info: `Fully Tested REST API created to hook into a PSQL database
         and utilise a multitude of endpoints to serve information
-        relating to published articles and users of the NC News
+        relating to published articles and users of the of a
         community news board.`,
         projectImg: "assets/project-images/nc-news-api.png",
         techStackImgs: [
@@ -64,6 +81,11 @@ const projectsInfo = [
         repoUrl: "https://github.com/swoody2527/Repper/tree/main/final-project",
         altUrl: ["video", "https://www.youtube.com/watch?v=s5XpMwqDfYQ"]
     },
+    
+]
+
+
+const unused = [
     {
         name: "SubTrack",
         info: `A desktop application created to help users keep track of
@@ -78,7 +100,26 @@ const projectsInfo = [
         ],
         repoUrl: "https://github.com/swoody2527/SubTrack",
         altUrl: ["video", "https://youtu.be/IQ3UfdIb_cM"]
+    },
+
+    {
+        name: "NC News",
+        info: `A community based news board where users can filter based on
+              rating, category, publish date to read up on current topics.
+              Upon creating an account, users can also leave ratings and
+              comments to express their opinion on certain articles. This
+              project makes use of the NC News API listed below.`,
+        projectImg: "assets/project-images/nc-news-image.png",
+        techStackImgs: [
+            "assets/javascript-js.svg",
+            "assets/react.svg",
+            "assets/CSS3_logo.svg.png"
+        ],
+        repoUrl: "https://github.com/swoody2527/NC-News-Front-End",
+        altUrl: ["video", "https://www.youtube.com/watch?v=an56rQCogps"]
     }
+
+
 ]
 
 export default projectsInfo

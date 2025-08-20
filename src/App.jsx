@@ -141,12 +141,15 @@ function App() {
                       style={{ fontSize: "30px" }}>
                       View Repo
                     </a>
+                    {project.altUrl ?
                     <a 
                     href={project.altUrl[1]}
                     target="_blank"
                     className="cv-btn" style={{ fontSize: "30px" }}>
                       {project.altUrl[0] === "video" ? "Demo Video" : "Live Site"}
                     </a>
+                    : null}   
+
                     </div>
                   </div>
                 );
