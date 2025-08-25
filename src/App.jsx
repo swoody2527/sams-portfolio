@@ -35,8 +35,7 @@ function App() {
               <span style={{ color: "white" }}>
                 Full-Stack Software Engineer
               </span>{" "}
-              creating great programming solutions and exploring new
-              technologies.
+              bringing ideas to life through code and creative problem-solving.
             </p>
           </div>
           <a target="_blank" href="assets/Sam Woodall - CV.pdf"><button className="cv-btn">Resume / CV</button></a>
@@ -124,31 +123,31 @@ function App() {
                         className="project-img"
                         src={project.projectImg}></img>
                       <p>{project.info}</p>
-                      {project.name === "NC News API" ? <p style={{color: "Yellow"}}>Please note 
-                      NC News API is hosted for free on Render, it may require 30 seconds to spin up,
-                      and a refresh!</p> : null}
+                      {project.name === "NC News API" ? <p style={{ color: "Yellow" }}>Please note
+                        NC News API is hosted for free on Render, it may require 30 seconds to spin up,
+                        and a refresh!</p> : null}
                     </div>
                     <div className="project-footer">
-                    <div className="tech-stack">
+                      <div className="tech-stack">
                         {project.techStackImgs.map((img) => {
                           return <img src={img}></img>;
                         })}
                       </div>
-                    <a
-                      target="_blank"
-                      href={project.repoUrl}
-                      className="cv-btn"
-                      style={{ fontSize: "30px" }}>
-                      View Repo
-                    </a>
-                    {project.altUrl ?
-                    <a 
-                    href={project.altUrl[1]}
-                    target="_blank"
-                    className="cv-btn" style={{ fontSize: "30px" }}>
-                      {project.altUrl[0] === "video" ? "Demo Video" : "Live Site"}
-                    </a>
-                    : null}   
+                      <a
+                        target="_blank"
+                        href={project.repoUrl}
+                        className="cv-btn"
+                        style={{ fontSize: "30px" }}>
+                        View Repo
+                      </a>
+                      {project.altUrl ?
+                        <a
+                          href={project.altUrl[1]}
+                          target="_blank"
+                          className="cv-btn" style={{ fontSize: "30px" }}>
+                          {project.altUrl[0] === "video" ? "Demo Video" : "Live Site"}
+                        </a>
+                        : null}
 
                     </div>
                   </div>
@@ -169,22 +168,24 @@ function App() {
             </div>
 
             <p className="about-me-text">
-              Hello there! I'm Sam Woodall, a Software Devloper based in West
-              Sussex, UK. For me, the joy in coding stems from the continual
-              problem solving required to create great code. Breaking down a 
-              project and solving it piece by piece is an immensely satisfying
-              process, especially when you bring it all back together to have
-              a tangible, function creation at the end. I am commited to the endless
-              learning journey that comes with a career in Software Development
-              and I am eager to continue expanding my skillset and create fantastic
-              programming solutions.
+              Hi, I'm Sam Woodall, a Software Developer based in West Sussex, UK.
+
+              What I love most about coding is the problem-solving—taking something complex, 
+              breaking it down into smaller challenges, and then bringing 
+              it all back together into a working solution. There's something really 
+              satisfying about seeing an idea come to life through code.
+
+              I'm excited by the challenge of learning and always looking for new ways 
+              to expand my skills. Whether it's tackling new technologies 
+              or refining existing ones, I'm excited to keep growing and 
+              building software that makes a difference.
             </p>
 
             <p className="about-me-text">
               Outside of coding, I like to keep up with my personal fitness
               through weightlifting and running. I also love foreign language
-              learning and have been studying Korean as my focus for around 
-              7 years now. 
+              learning and have been studying Korean as my focus for around
+              7 years now.
             </p>
 
             <p className="about-me-text">Thank you for taking the time to look at my portfolio website!</p>
@@ -193,20 +194,20 @@ function App() {
         <ContactForm></ContactForm>
         <div className="contact-details">
           <div className="contact-me-email">
-          <img src="assets/icons8-email-48.png"></img>
-          <p>swoodall2527@gmail.com </p>
+            <img src="assets/icons8-email-48.png"></img>
+            <p>swoodall2527@gmail.com </p>
           </div>
           <div className="contact-me-socials">
-        <a href="https://github.com/swoody2527" target="_blank" rel="noopener noreferrer">
-          <img className="github-img" src="assets/github-logo.png" alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com/in/sam-woodall-41790128b/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/In-White-40-Γö¼┬½.png" alt="LinkedIn" />
-        </a>
-        </div>
-        </div>
+            <a href="https://github.com/swoody2527" target="_blank" rel="noopener noreferrer">
+              <img className="github-img" src="assets/github-logo.png" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/sam-woodall-41790128b/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/linkedin-white.png" alt="LinkedIn" />
+            </a>
+          </div>
         </div>
       </div>
+    </div>
 
   );
 }
