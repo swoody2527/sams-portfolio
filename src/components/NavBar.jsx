@@ -33,7 +33,7 @@ function NavBar() {
           <img className="github-img" src="assets/github-logo.png" alt="GitHub" />
         </a>
         <a href="https://www.linkedin.com/in/sam-woodall-41790128b/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/In-White-40-Γö¼┬½.png" alt="LinkedIn" />
+          <img src="assets/linkedin-white.png" alt="LinkedIn" />
         </a>
       </div>
     </nav>

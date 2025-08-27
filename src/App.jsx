@@ -170,7 +170,7 @@ function App() {
             <p className="about-me-text">
               Hi, I'm Sam Woodall, a Software Developer based in West Sussex, UK.
 
-              What I love most about coding is the problem-solving—taking something complex, 
+              What I love most about coding is taking something complex, 
               breaking it down into smaller challenges, and then bringing 
               it all back together into a working solution. There's something really 
               satisfying about seeing an idea come to life through code.
